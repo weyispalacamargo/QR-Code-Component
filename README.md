@@ -1,4 +1,9 @@
-Teste Notificação Netlify.
+## 🚀 Links do Projeto
+
+* 🌍 [Acesse via GitHub Pages](https://weyispalacamargo.github.io/QR-Code-Component/)
+* ⚡ [Acesse via Vercel](https://qr-code-component-seven.vercel.app)
+* 💎 [Acesse via Netlify](https://qr-codep.netlify.app/)
+
 # Frontend Mentor - QR code component
 
 ![Design preview for the QR code component coding challenge](./preview.jpg)
