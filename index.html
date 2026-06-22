@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <style>
+    :root {
+      /* Cores */
+      --white: hsl(0, 0%, 100%);
+      --slate-300: hsl(212, 45%, 89%);
+      /* ...adicione as outras cores aqui... */
+
+      /* Larguras de Layout (úteis para usar em Media Queries se necessário) */
+      --mobile-width: 375px;
+      --desktop-width: 1440px;
+    }
+
+    body {
+      /* Conforme o "Body Copy" */
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+
+      /* Exemplo de aplicação da variável */
+      background-color: var(--slate-300);
+
+      /* Geralmente os cards ficam centralizados na tela. Posso usar Flexbox ou Grid no body para isso */
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 24px;
+      /* Evita que o card encoste nas bordas em celulares muito pequenos */
+    }
+
+    .card {
+      background-color: var(--white);
+      padding: 16px;
+      /* Espaçamento interno entre a borda branca e o conteúdo */
+      border-radius: 20px;
+      /* Bordas arredondadas do card */
+
+      max-width: 320px;
+      /* Largura máxima que o card vai ter */
+      text-align: center;
+      /* Centraliza todos os textos e a imagem internamente */
+
+      /* Uma sombra leve deixa o card idêntico ao do design */
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    .card-title {
+      color: hsl(218, 44%, 22%);
+      /* Este é o Slate 900 na prática! */
+    }
+
+    .card-text {
+      color: hsl(216, 15%, 48%);
+      /* Este é o Slate 500 */
+    }
+
+    .card-img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <article class="card">
+      <img src="./images/image-qr-code.png" alt="QR Code" class="card-img">
+
+      <h1 class="card-title">Improve your front-end skills by building projects</h1>
+
+      <p class="card-text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </article>
+
+  </main>
+</body>
+
+</html>
